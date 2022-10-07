@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.1.5
   font_awesome_flutter: ^10.2.1
+  firebase_core: ^1.24.0
+  firebase_auth: ^3.11.2
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +73,9 @@ flutter:
     - assets/images/new1.png
     - assets/images/new2.png
     - assets/images/new3.png
+    - assets/images/news.png
+    - assets/images/history.png
+    - assets/images/certificate.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

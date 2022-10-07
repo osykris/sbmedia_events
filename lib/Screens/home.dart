@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen>  {
 
   @override
   Widget build(BuildContext context) {
@@ -106,33 +110,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedIconTheme: IconThemeData(color: Color(0xFFFFFFFF), size: 35),
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        backgroundColor: '#40A57C'.toColor(),
-        type: BottomNavigationBarType.fixed,
-        unselectedItemColor: const Color(0xFFB7BEF5),
-        // currentIndex: _currentIndex,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            label: "Home",
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: "News",
-            icon: Icon(Icons.book),
-          ),
-          BottomNavigationBarItem(
-            label: "Events",
-            icon: Icon(FontAwesomeIcons.calendar),
-          ),
-          BottomNavigationBarItem(
-            label: "Login",
-            icon: Icon(Icons.login),
-          ),
-        ],
       ),
     );
   }

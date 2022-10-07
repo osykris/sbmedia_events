@@ -33,3 +33,6 @@ TextStyle desc =
     TextStyle(color: light, fontWeight: FontWeight.w400, fontSize: 12);
 
 TextStyle news =  TextStyle(color: darkBlue, fontWeight: FontWeight.w400, fontSize: 12);
+
+TextStyle detailevent =
+    TextStyle(color: darkBlue, fontWeight: FontWeight.w600, fontSize: 16);
